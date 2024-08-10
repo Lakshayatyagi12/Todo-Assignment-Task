@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "task": "Learn React",
+      "completed": false,
+      "description": "Study the React documentation and complete a tutorial.",
+      "updatedAt": "2024-08-07 10:00:00"
+    },
+    {
+      "id": 2,
+      "task": "Build a Todo App",
+      "completed": false,
+      "description": "Create a todo list application with React and Tailwind CSS.",
+      "updatedAt": "2024-08-07 11:00:00"
+    }
+  ]
+  
