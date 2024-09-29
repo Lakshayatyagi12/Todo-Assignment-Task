@@ -56,13 +56,13 @@ const TodoItem = ({ todo, onUpdate, onToggle, onDelete }) => {
             <div>
               <button
                 onClick={() => setIsEditing(true)}
-                className={`bg-yellow-500 py-2 px-5 text-white font-semibold mr-2 rounded-full shadow-md hover:bg-yellow-700 focus:outline-none ${todo.completed ? 'opacity-50 cursor-not-allowed' : ''}`}
+                className={`bg-yellow-500 py-2 px-5 text-white font-semibold mr-2 mt-2 rounded-full shadow-md hover:bg-yellow-700 focus:outline-none ${todo.completed ? 'opacity-50 cursor-not-allowed' : ''}`}
                 disabled={todo.completed}
               >
                 Edit
               </button>
-              <button onClick={() => setExpanded(!expanded)} className="bg-gray-500 py-2 px-5 mr-2 text-white font-semibold rounded-full shadow-md hover:bg-gray-700 focus:outline-none ">Expand</button>
-              <button onClick={() => onDelete(todo.id)} className="bg-red-500 py-2 px-5 text-white font-semibold rounded-full shadow-md hover:bg-red-700 focus:outline-none">Delete</button>
+              <button onClick={() => setExpanded(!expanded)} className="bg-gray-500 py-2 px-5 mr-2 mt-2 text-white font-semibold rounded-full shadow-md hover:bg-gray-700 focus:outline-none ">Expand</button>
+              <button onClick={() => onDelete(todo.id)} className="bg-red-500 py-2 px-5 text-white mt-2 font-semibold rounded-full shadow-md hover:bg-red-700 focus:outline-none">Delete</button>
             </div>
           </div>
           {expanded && (
